@@ -1,0 +1,87 @@
+/* Global modern theme for TrainBook */
+
+:root {
+	--tb-bg: #0a1f49;
+	--tb-bg-2: #0e1b3a;
+	--tb-surface: #ffffff;
+	--tb-primary: #4da3ff;
+	--tb-secondary: #9b59b6;
+	--tb-accent: #e74c3c;
+	--tb-success: #27ae60;
+	--tb-warning: #f39c12;
+	--tb-muted: #6c757d;
+}
+
+body {
+	background: linear-gradient(180deg, rgba(10,31,73,0.95) 0%, rgba(10,31,73,0.92) 100%),
+		radial-gradient(circle at 20% 10%, rgba(77,163,255,0.15), transparent 40%),
+		radial-gradient(circle at 80% 20%, rgba(155,89,182,0.15), transparent 45%),
+		#0a1f49;
+	background-attachment: fixed;
+	color: #222;
+}
+
+.navbar, .navbar-custom {
+	background: rgba(255,255,255,0.95) !important;
+	backdrop-filter: blur(10px);
+	box-shadow: 0 2px 20px rgba(0,0,0,0.08);
+}
+
+.sidebar {
+	background: linear-gradient(135deg, #0b1530 0%, #162a5a 100%);
+	box-shadow: 2px 0 12px rgba(0,0,0,0.15);
+}
+.sidebar .nav-link { color: rgba(255,255,255,0.85); }
+.sidebar .nav-link:hover,
+.sidebar .nav-link.active {
+	background: rgba(255,255,255,0.12);
+	color: #fff;
+	transform: translateX(4px);
+}
+
+.card {
+	border: none;
+	border-radius: 16px;
+	box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.btn,
+.btn-custom,
+.btn-primary,
+.btn-outline-primary {
+	border-radius: 10px;
+}
+
+.btn-primary, .btn-custom {
+	background: linear-gradient(90deg, var(--tb-primary), var(--tb-secondary));
+	border: none;
+}
+.btn-primary:hover, .btn-custom:hover { filter: brightness(1.05); }
+
+.badge { border-radius: 999px; padding: 6px 10px; font-weight: 600; }
+
+.table { background: #fff; }
+.table thead th { background: #f7f9fc; border-bottom: 2px solid #eef2f7; }
+.table-hover tbody tr:hover { background: #f7fbff; }
+
+.status-badge { border-radius: 999px; padding: 6px 12px; font-weight: 600; }
+.status-confirmed { background: #d4edda; color: #155724; }
+.status-cancelled { background: #f8d7da; color: #721c24; }
+.status-pending { background: #fff3cd; color: #856404; }
+.status-processing { background: #e8f0fe; color: #1a73e8; }
+
+.payment-paid { background: #d4edda; color: #155724; }
+.payment-pending { background: #fff3cd; color: #856404; }
+
+.alert { border: none; border-radius: 12px; }
+
+.footer { background: #0b1530; color: #fff; }
+
+/* Utilities */
+.tb-hero {
+	background: linear-gradient(180deg, rgba(10,31,73,0.85) 0%, rgba(10,31,73,0.8) 100%);
+	color: #fff;
+	padding: 24px 0;
+}
+
+
